@@ -1,8 +1,11 @@
 {
   "name": "@n3tr/mono-hello-world-component",
-  "version": "1.0.0",
+  "version": "1.0.1-next.5+bd93192",
   "description": "",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +14,6 @@
   "devDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
-  }
+  },
+  "gitHead": "bd931924543f6b60ab34bd8909ee7d6e28474e2f"
 }
