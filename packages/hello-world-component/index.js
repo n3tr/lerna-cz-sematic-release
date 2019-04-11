@@ -1,3 +1,3 @@
 
 
-module.exports = "Hello, woruld.. Components"
+module.exports = "Hello, Wourld! Component!"
