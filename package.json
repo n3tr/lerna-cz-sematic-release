@@ -12,5 +12,6 @@
   },
   "scripts": {
     "commit": "npx git-cz"
-  }
+  },
+  "workspaces": ["packages/*"]
 }
