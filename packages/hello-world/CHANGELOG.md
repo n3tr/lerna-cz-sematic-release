@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/n3tr/lerna-cz-sematic-release/compare/@n3tr/mono-hello-world@1.2.1...@n3tr/mono-hello-world@1.2.2) (2019-04-12)
+
+
+### Bug Fixes
+
+* 🐛 Remove Black Hole! ([430a602](https://github.com/n3tr/lerna-cz-sematic-release/commit/430a602))
+
+
+
+
+
 ## [1.2.1](https://github.com/n3tr/lerna-cz-sematic-release/compare/@n3tr/mono-hello-world@1.2.0...@n3tr/mono-hello-world@1.2.1) (2019-04-12)
 
 
