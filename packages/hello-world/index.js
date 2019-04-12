@@ -1,1 +1,1 @@
-module.exports = 'Hello, Black Hole!'
+module.exports = 'Hello, Black Hole!!'
