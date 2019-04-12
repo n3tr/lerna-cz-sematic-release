@@ -2,16 +2,19 @@
   "name": "root",
   "private": true,
   "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
     "cz-lerna-changelog": "^2.0.2",
     "lerna": "^3.13.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
-    }
   },
   "scripts": {
     "commit": "npx git-cz"
   },
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
