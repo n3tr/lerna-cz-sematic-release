@@ -6,11 +6,17 @@
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "gitHead": "bd931924543f6b60ab34bd8909ee7d6e28474e2f"
+  "gitHead": "bd931924543f6b60ab34bd8909ee7d6e28474e2f",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
 }
