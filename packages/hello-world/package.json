@@ -14,6 +14,7 @@
   "description": "",
   "gitHead": "bd931924543f6b60ab34bd8909ee7d6e28474e2f",
   "dependencies": {
+    "change-case": "^3.1.0",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
