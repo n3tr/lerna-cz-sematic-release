@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/n3tr/lerna-cz-sematic-release/compare/@n3tr/mono-hello-world-component@1.3.0...@n3tr/mono-hello-world-component@1.3.1) (2019-05-07)
+
+
+### Bug Fixes
+
+* 🐛 Use changeCase ([00f60e1](https://github.com/n3tr/lerna-cz-sematic-release/commit/00f60e1))
+
+
+
+
+
 # [1.3.0](https://github.com/n3tr/lerna-cz-sematic-release/compare/@n3tr/mono-hello-world-component@1.2.1...@n3tr/mono-hello-world-component@1.3.0) (2019-04-12)
 
 
