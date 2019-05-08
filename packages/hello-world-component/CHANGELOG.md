@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/n3tr/lerna-cz-sematic-release/compare/@n3tr/mono-hello-world-component@1.3.3...@n3tr/mono-hello-world-component@1.4.0) (2019-05-08)
+
+
+### Features
+
+* 🎸 HaHa ([34a6394](https://github.com/n3tr/lerna-cz-sematic-release/commit/34a6394))
+
+
+
+
+
 ## [1.3.3](https://github.com/n3tr/lerna-cz-sematic-release/compare/@n3tr/mono-hello-world-component@1.3.2...@n3tr/mono-hello-world-component@1.3.3) (2019-05-08)
 
 **Note:** Version bump only for package @n3tr/mono-hello-world-component
