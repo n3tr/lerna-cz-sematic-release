@@ -61,11 +61,9 @@ jobs:
       - run:
           name: Logging in to npm
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-      - attach_workspace:
-          at: ~/workspace
       - run:
           name: Publish to Production
-          command: yarn publish
+          command: yarn publish:prod
       - run:
           name: Push change to master
           command: git push --follow-tags origin master
