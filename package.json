@@ -15,7 +15,7 @@
     "commit": "npx git-cz",
     "test": "lerna run test",
     "publish:rc": "lerna publish --canary --dist-tag next --preid next --exact --ignore-prepublish --yes",
-    "publish:prod": "lerna punlish --exact --ignore-prepublish --yes"
+    "publish:prod": "lerna publish --exact --ignore-prepublish --yes"
   },
   "workspaces": [
     "packages/*"
