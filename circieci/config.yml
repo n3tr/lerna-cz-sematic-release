@@ -1,0 +1,99 @@
+defaults: &defaults
+  docker:
+    - image: circleci/node:10.15.0-browsers
+  working_directory: ~/workspace
+
+version: 2.1
+jobs:
+  dependencies:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Logging in to npm
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      # We don't use circleci caching right now
+      # Since lerna might be install modules inside each packages
+      # - restore_cache:
+      #     key: dependency-cache-{{ checksum "yarn.lock" }}
+      - run:
+          name: Installing dependencies
+          command: yarn --frozen-lockfile
+      # - save_cache:
+      #     key: dependency-cache-{{ checksum "yarn.lock" }}
+      #     paths:
+      #       - ~/workspace/node_modules
+      - persist_to_workspace:
+          root: ~/workspace
+          paths: .
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/workspace
+      - run:
+          name: Test all projects
+          command: yarn test
+  publish-rc:
+    <<: *defaults
+    steps:
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/workspace/.npmrc
+      - attach_workspace:
+          at: ~/workspace
+      - run:
+          name: Publish rc tag
+          command: yarn publish:rc
+  publish-production:
+    <<: *defaults
+    steps:
+      - run:
+          name: Logging in to npm
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - attach_workspace:
+          at: ~/workspace
+      - run:
+          name: Publish to Production
+          command: yarn publish
+      - run:
+          name: Push change to master
+          command: git push --follow-tags origin master
+      
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - dependencies
+      - test:
+          requires:
+            - dependencies
+      - hold:
+          type: approval
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master
+                - develop
+      - publish-rc:
+          requires:
+            - hold
+          filters:
+            branches:
+              only:
+                - develop
+      - publish-production:
+          requires:
+            - hold
+          filters:
+            branches:
+              only:
+                - master
+            
+      
+      
+
+
