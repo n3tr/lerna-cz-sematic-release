@@ -52,21 +52,18 @@ jobs:
           at: ~/workspace
       - add_ssh_keys:
           fingerprints:
-            - "c1:0f:2d:fd:20:57:da:74:71:43:7d:57:6e:a1:c2:1b"
+            - "2e:1c:f0:05:d7:ea:2d:e5:e1:60:4e:9d:38:19:30:17"
       - run:
           name: Setup Git
           command: |
             git config user.email "saakyz@gmail.com"
-            git config user.name "n3tr CircleCI"
+            git config user.name "Jirat Ki."
       - run:
           name: Logging in to npm
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
           name: Publish to Production
           command: yarn publish:prod
-      - run:
-          name: Push change to master
-          command: git push --follow-tags origin master
       
 
 workflows:
