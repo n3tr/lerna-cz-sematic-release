@@ -48,6 +48,8 @@ jobs:
   publish-production:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/workspace
       - add_ssh_keys:
           fingerprints:
             - "c1:0f:2d:fd:20:57:da:74:71:43:7d:57:6e:a1:c2:1b"
