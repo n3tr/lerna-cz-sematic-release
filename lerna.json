@@ -1,5 +1,4 @@
 {
-  "version": "2.1.2",
   "packages": [
     "packages/*"
   ],
@@ -13,5 +12,6 @@
       ],
       "message": "chore(release): publish [skip ci]"
     }
-  }
+  },
+  "version": "0.0.0"
 }
