@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.1.0 (2019-09-11)
+
+
+### Bug Fixes
+
+* 🐛 Add ! ([9d5a40e](https://github.com/n3tr/lerna-cz-sematic-release/commit/9d5a40e))
+* 🐛 Add missing ! ([3a7f954](https://github.com/n3tr/lerna-cz-sematic-release/commit/3a7f954))
+* 🐛 Remove Black Hole! ([430a602](https://github.com/n3tr/lerna-cz-sematic-release/commit/430a602))
+* 🐛 Use changeCase ([00f60e1](https://github.com/n3tr/lerna-cz-sematic-release/commit/00f60e1))
+* fix hello, world wording ([3d2b367](https://github.com/n3tr/lerna-cz-sematic-release/commit/3d2b367))
+
+
+### Features
+
+* 🎸 Add dev to hello-world ([370f5ee](https://github.com/n3tr/lerna-cz-sematic-release/commit/370f5ee))
+* 🎸 Hello, Black Hole now! ([6239c3b](https://github.com/n3tr/lerna-cz-sematic-release/commit/6239c3b))
+* 🎸 Remove dev file ([12d4092](https://github.com/n3tr/lerna-cz-sematic-release/commit/12d4092))
+* Add somethin ([b6471de](https://github.com/n3tr/lerna-cz-sematic-release/commit/b6471de))
+* **packages:** export value from packages ([b7df0ae](https://github.com/n3tr/lerna-cz-sematic-release/commit/b7df0ae))
+
+
+
+
+
 # [1.4.0](https://github.com/n3tr/lerna-cz-sematic-release/compare/@n3tr/mono-hello-world@1.3.0...@n3tr/mono-hello-world@1.4.0) (2019-05-24)
 
 
